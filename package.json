@@ -1,0 +1,12 @@
+{
+  "name": "backend-boilerplate",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd app && go build main.go",
+    "start": "cd app && go run main.go",
+    "test": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^12.17.1"
+  }
+}

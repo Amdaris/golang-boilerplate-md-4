@@ -1,0 +1,85 @@
+info:
+  contact: {}
+  title: Internship Challenge
+  version: "1.0"
+paths:
+  /challenge-1:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: request
+        in: body
+        name: request
+        required: true
+        schema:
+          items:
+            type: integer
+          type: array
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: response
+          schema:
+            type: integer
+      tags:
+      - challenge
+  /challenge-2:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: request
+        in: body
+        name: request
+        required: true
+        schema:
+          items:
+            type: integer
+          type: array
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: response
+          schema:
+            items:
+              type: integer
+            type: array
+      tags:
+      - challenge
+  /challenge-3:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: request
+        in: body
+        name: request
+        required: true
+        schema:
+          items:
+            type: integer
+          type: array
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: response
+          schema:
+            type: boolean
+      tags:
+      - challenge
+  /ping:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: pong
+          schema:
+            type: string
+      tags:
+      - system
+swagger: "2.0"
