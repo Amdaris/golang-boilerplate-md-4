@@ -22,9 +22,9 @@ paths:
         "200":
           description: response
           schema:
-            type: integer
+            type: boolean
       tags:
-      - challenge
+      - default
   /challenge-2:
     post:
       consumes:
@@ -48,7 +48,7 @@ paths:
               type: integer
             type: array
       tags:
-      - challenge
+      - default
   /challenge-3:
     post:
       consumes:
@@ -68,9 +68,9 @@ paths:
         "200":
           description: response
           schema:
-            type: boolean
+            type: integer
       tags:
-      - challenge
+      - default
   /ping:
     get:
       produces:
@@ -81,5 +81,5 @@ paths:
           schema:
             type: string
       tags:
-      - system
+      - default
 swagger: "2.0"

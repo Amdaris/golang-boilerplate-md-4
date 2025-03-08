@@ -15,7 +15,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "challenge"
+                    "default"
                 ],
                 "parameters": [
                     {
@@ -35,7 +35,7 @@
                     "200": {
                         "description": "response",
                         "schema": {
-                            "type": "integer"
+                            "type": "boolean"
                         }
                     }
                 }
@@ -50,7 +50,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "challenge"
+                    "default"
                 ],
                 "parameters": [
                     {
@@ -88,7 +88,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "challenge"
+                    "default"
                 ],
                 "parameters": [
                     {
@@ -108,7 +108,7 @@
                     "200": {
                         "description": "response",
                         "schema": {
-                            "type": "boolean"
+                            "type": "integer"
                         }
                     }
                 }
@@ -120,7 +120,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "system"
+                    "default"
                 ],
                 "responses": {
                     "200": {

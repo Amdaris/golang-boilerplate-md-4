@@ -24,7 +24,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "challenge"
+                    "default"
                 ],
                 "parameters": [
                     {
@@ -44,7 +44,7 @@ const docTemplate = `{
                     "200": {
                         "description": "response",
                         "schema": {
-                            "type": "integer"
+                            "type": "boolean"
                         }
                     }
                 }
@@ -59,7 +59,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "challenge"
+                    "default"
                 ],
                 "parameters": [
                     {
@@ -97,7 +97,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "challenge"
+                    "default"
                 ],
                 "parameters": [
                     {
@@ -117,7 +117,7 @@ const docTemplate = `{
                     "200": {
                         "description": "response",
                         "schema": {
-                            "type": "boolean"
+                            "type": "integer"
                         }
                     }
                 }
@@ -129,7 +129,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "system"
+                    "default"
                 ],
                 "responses": {
                     "200": {

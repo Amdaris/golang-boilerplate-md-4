@@ -12,7 +12,7 @@ import (
 	_ "backend-boilerplate-golang/docs"
 )
 
-// @Tags         system
+// @Tags         default
 // @Produce      json
 // @Success      200 {string} string "pong"
 // @Router       /ping [get]
@@ -20,7 +20,7 @@ func handler(w http.ResponseWriter, _ *http.Request) {
 	fmt.Fprintf(w, "pong")
 }
 
-// @Tags         challenge
+// @Tags         default
 // @Accept       json
 // @Produce      json
 // @Param        request body []int true "request"
@@ -40,7 +40,7 @@ func challenge1Handler(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(result)
 }
 
-// @Tags         challenge
+// @Tags         default
 // @Accept       json
 // @Produce      json
 // @Param        request body []int true "request"
@@ -60,7 +60,7 @@ func challenge2Handler(w http.ResponseWriter, req *http.Request) {
 	json.NewEncoder(w).Encode(result)
 }
 
-// @Tags         challenge
+// @Tags         default
 // @Accept       json
 // @Produce      json
 // @Param        request body []int true "request"
