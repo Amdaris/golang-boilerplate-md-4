@@ -8,6 +8,7 @@ import (
 
 	httpSwagger "github.com/swaggo/http-swagger"
 
+	challenges "backend-boilerplate-golang/challenges"
 	_ "backend-boilerplate-golang/docs"
 )
 
@@ -23,7 +24,7 @@ func handler(w http.ResponseWriter, _ *http.Request) {
 // @Accept       json
 // @Produce      json
 // @Param        request body []int true "request"
-// @Success      200 {integer} int "response"
+// @Success      200 {boolean} bool "response"
 // @Router       /challenge-1 [post]
 func challenge1Handler(w http.ResponseWriter, r *http.Request) {
 	var array []int
@@ -33,8 +34,7 @@ func challenge1Handler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Write the code for Challenge 1 here
-	result := 0
+	result := challenges.Challenge1(array)
 
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(result)
@@ -54,8 +54,7 @@ func challenge2Handler(w http.ResponseWriter, req *http.Request) {
 		return
 	}
 
-	// Write the code for Challenge 2 here
-	result := []int{}
+	result := challenges.Challenge2(array)
 
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(result)
@@ -65,7 +64,7 @@ func challenge2Handler(w http.ResponseWriter, req *http.Request) {
 // @Accept       json
 // @Produce      json
 // @Param        request body []int true "request"
-// @Success      200 {boolean} bool "response"
+// @Success      200 {integer} int "response"
 // @Router       /challenge-3 [post]
 func challenge3Handler(w http.ResponseWriter, req *http.Request) {
 	var array []int
@@ -75,12 +74,10 @@ func challenge3Handler(w http.ResponseWriter, req *http.Request) {
 		return
 	}
 
-	// Write the code for Challenge 3 here
-
-	response := true
+	result := challenges.Challenge3(array)
 
 	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(response)
+	json.NewEncoder(w).Encode(result)
 }
 
 // @title           Internship Challenge
